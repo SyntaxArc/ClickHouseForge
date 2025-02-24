@@ -1,0 +1,45 @@
+<clickhouse>
+  <remote_servers>
+    <my_cluster>
+      <shard>
+        <replica>
+          <host>clickhouse-1</host>
+          <port>9000</port>
+          <user>admin</user>
+          <password>secretpassword</password>
+        </replica>
+      </shard>
+      <shard>
+        <replica>
+          <host>clickhouse-2</host>
+          <port>9000</port>
+          <user>admin</user>
+          <password>secretpassword</password>
+        </replica>
+      </shard>
+      <shard>
+        <replica>
+          <host>clickhouse-3</host>
+          <port>9000</port>
+          <user>admin</user>
+          <password>secretpassword</password>
+        </replica>
+      </shard>
+    </my_cluster>
+  </remote_servers>
+  
+  <zookeepers>
+      <node>
+        <host>zookeeper-1</host>
+        <port>2181</port>
+      </node>
+      <node>
+        <host>zookeeper-2</host>
+        <port>2181</port>
+      </node>
+      <node>
+        <host>zookeeper-3</host>
+        <port>2181</port>
+      </node>
+    </zookeepers>
+</clickhouse>
