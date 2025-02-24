@@ -85,8 +85,6 @@ services:
       - CLICKHOUSE_USER=admin
       - CLICKHOUSE_PASSWORD=secretpassword
       - CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1
-      - CLICKHOUSE_LOGGER_LEVEL=trace  # Set log level to trace
-      - CLICKHOUSE_LOGGER_CONSOLE=1    # Enable console logging
     ulimits:
       nproc: 65535
       nofile:
