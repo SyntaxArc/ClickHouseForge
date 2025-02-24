@@ -96,11 +96,11 @@ services:
 #      resources:
 #        limits:
 #          memory: 2g
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8123/ping"]
-      interval: 5s
-      timeout: 3s
-      retries: 5
+#    healthcheck:
+#      test: ["CMD", "curl", "-f", "http://localhost:8123/ping"]
+#      interval: 5s
+#      timeout: 3s
+#      retries: 5
     restart: unless-stopped
     networks:
       - clickhouse-net
@@ -137,11 +137,11 @@ services:
 #      resources:
 #        limits:
 #          memory: 2g
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8123/ping"]
-      interval: 5s
-      timeout: 3s
-      retries: 5
+#    healthcheck:
+#      test: ["CMD", "curl", "-f", "http://localhost:8123/ping"]
+#      interval: 5s
+#      timeout: 3s
+#      retries: 5
     restart: unless-stopped
     networks:
       - clickhouse-net
@@ -178,11 +178,11 @@ services:
 #      resources:
 #        limits:
 #          memory: 2g
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8123/ping"]
-      interval: 5s
-      timeout: 3s
-      retries: 5
+#    healthcheck:
+#      test: ["CMD", "curl", "-f", "http://localhost:8123/ping"]
+#      interval: 5s
+#      timeout: 3s
+#      retries: 5
     restart: unless-stopped
     networks:
       - clickhouse-net
